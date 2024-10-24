@@ -1,41 +1,16 @@
-type Page = {
-    title: string;
-    likes: number;
-    accounts: string[]
-    status: "open" | "close";
-    details?: {}
-}
-
-/*або ось так 
-type Page = {
-    title: string;
-    likes: number;
-    accounts: string[]
-    status: "open" | "close";
-}
-
-type Optional = {
-    details?: {}
-}
-
-type FinalPage = Page & Optional
-
-
-також так 
-
 type Details = {
-    createAt: string;
-    updateAt: string;
+  createAt: Date;
+  updateAt: Date;
 };
 
 type Page = {
-    title: string;
-    likes: number;
-    accounts: string[];
-    status: "open" | "close";
-    details?: Details;
+  title: string;
+  likes: number;
+  accounts: string[];
+  status: "open" | "close";
+  details?: Details;
 };
-*/
+
 
 
 const page1: Page = {

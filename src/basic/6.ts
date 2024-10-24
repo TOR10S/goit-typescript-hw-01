@@ -1,10 +1,13 @@
+interface IAddress {
+    city: string;
+    country: string;
+}
+
 interface IUser {
     name: string;
     age: number;
     email: string;
-    address?: {
-
-    }
+    address?: IAddress
 }
 
 const mango: IUser = {
